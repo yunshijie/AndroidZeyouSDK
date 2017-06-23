@@ -41,6 +41,6 @@ Android 4.1 (API 16) 及其以上
 
 ## 说明
 SDK 目前基于 [ijkplayer](https://github.com/Bilibili/ijkplayer) , 感谢 [ijkplayer](https://github.com/Bilibili/ijkplayer)。
-参考 [vhallsdk_live_android]（https://github.com/vhall/vhallsdk_live_android）
+参考 [vhallsdk_live_android](https://github.com/vhall/vhallsdk_live_android)
 
 
