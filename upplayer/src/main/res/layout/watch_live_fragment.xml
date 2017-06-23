@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.zeyou.zeyousdklib.widget.ContainerLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" >
+
+        <com.zeyou.uilibs.player.MyPlayView
+            android:id="@+id/uvv_vido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.zeyou.zeyousdklib.widget.ContainerLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:src="@drawable/icon_round_back" />
+
+        <TextView
+            android:id="@+id/fragment_download_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#E60000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/alpha">
+
+        <ImageView
+            android:id="@+id/click_rtmp_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/zeyou_icon_live_play" />
+
+        <ImageView
+            android:id="@+id/click_rtmp_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_round_fullscreen" />
+
+        <ImageView
+            android:id="@+id/btn_change_scaletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/fit_default"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_change_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_change_scaletype"
+            android:background="@drawable/audio_close"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_change_audio"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/click_rtmp_watch"
+            android:layout_toRightOf="@+id/click_rtmp_watch"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/zeyou_icon_resolution_sd"
+                android:button="@null"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_hd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/zeyou_icon_resolution_hd"
+                android:button="@null"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_uhd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zeyou_icon_resolution_uhd"
+                android:button="@null"
+                android:visibility="invisible" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sound_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量"
+            android:textColor="#fff" />
+
+        <com.zeyou.media.demo.VSeekBar
+            android:id="@+id/sound_seek"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/bg_seek"
+            android:thumb="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/brightness_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度"
+            android:textColor="#fff" />
+
+        <com.zeyou.media.demo.VSeekBar
+            android:id="@+id/brightness_seek"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/bg_seek"
+            android:thumb="@null" />
+    </LinearLayout>
+
+
+</RelativeLayout>

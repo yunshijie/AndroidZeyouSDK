@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZeyouSDK_IJkPlayer.iml" filepath="$PROJECT_DIR$/ZeyouSDK_IJkPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/upplayer/upplayer.iml" filepath="$PROJECT_DIR$/upplayer/upplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeyou-player-demo/zeyou-player-demo.iml" filepath="$PROJECT_DIR$/zeyou-player-demo/zeyou-player-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeyousdklib/zeyousdklib.iml" filepath="$PROJECT_DIR$/zeyousdklib/zeyousdklib.iml" />
+    </modules>
+  </component>
+</project>
